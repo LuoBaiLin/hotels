@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping
+PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.integration.entity.Admin" table="admin">
+		<id name="adminid" column="adminid" type="int">
+			<generator class="identity"> <!-- 主键id的生成方式为自增 -->
+			</generator>
+		</id>
+		<property name="username" column="username" type="string"></property>
+		<property name="password" column="password" type="string"></property>
+	</class>
+</hibernate-mapping>
+
